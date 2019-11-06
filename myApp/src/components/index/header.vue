@@ -21,9 +21,10 @@
 <style scoped>
     .iheader{
         height:0.9rem;
-        background-color: pink;
+        background-color: white;
         padding-top:0.08rem;
         box-sizing: border-box;
+        z-index:10;
     }
     .i_search{
         width:3.45rem;

@@ -22,6 +22,7 @@
         top:0;
         padding:0.1rem 0rem;
         box-sizing: border-box;
+        background-color: white;
     }
     .c_search{
         width:3.45rem;

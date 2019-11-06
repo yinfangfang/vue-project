@@ -41,10 +41,11 @@
         height:0.5rem;
         position: fixed;
         bottom: 0px;
-        background-color: pink;
+        background-color: white;
         padding:0.06rem 0rem;
         box-sizing: border-box;
         font-size: 0.12rem;
+        z-index:10;
     }
     .footer ul{
         width:100%;

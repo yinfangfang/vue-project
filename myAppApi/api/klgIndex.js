@@ -19,77 +19,348 @@ module.exports = {
                             {
                                 "img":"assets/img/index/1_main_9_360.jpg",
                                 "title":"佰朗帝浮华宫廷鎏金绵羊皮风衣",
-                                "price":"￥1180",
-                                "oPrice":"￥1580"
+                                "price":"¥1180",
+                                "oPrice":"¥1580"
                             },
                             {
                                 "img":"assets/img/index/1_main_297480_360.jpg",
                                 "title":"LetsDiet经典魔术裤小黑裤修身瘦腿小脚3D提臀设计",
-                                "price":"￥148",
-                                "oPrice":"￥199"
+                                "price":"¥148",
+                                "oPrice":"¥199"
                             },
                             {
                                 "img":"assets/img/index/1_main_286521_360.jpg",
                                 "title":"尚街瑰丽设计师款云绒针织连衣裙",
-                                "price":"￥159",
-                                "oPrice":"￥209"
+                                "price":"¥159",
+                                "oPrice":"¥209"
                             },
                             {
                                 "img":"assets/img/index/1_main_11_360.jpg",
                                 "title":"Merefa爱丽小香风珠彩粗花呢长款外套",
-                                "price":"￥349",
-                                "oPrice":"￥399"
+                                "price":"¥349",
+                                "oPrice":"¥399"
                             },
                             {
                                 "img":"assets/img/index/1_main_276293_360.jpg",
                                 "title":"尚街瑰丽设计师款云绒针织女装实惠组合",
-                                "price":"￥99",
-                                "oPrice":"￥109"
+                                "price":"¥99",
+                                "oPrice":"¥109"
                             },
                             {
                                 "img":"assets/img/index/1_main_9_360 (1).jpg",
                                 "title":"心姬塑型无钢圈无海绵大码内衣（4件组合）",
-                                "price":"￥219",
-                                "oPrice":"￥229"
+                                "price":"¥219",
+                                "oPrice":"¥229"
                             },
                             {
                                 "img":"assets/img/index/1_main_280636_360.jpg",
                                 "title":"优廷繁星复古丝绒时装裤套组（阔腿裤*1件+直筒裤*1件+打底裤*1件）",
-                                "price":"￥219",
-                                "oPrice":"￥229"
+                                "price":"¥219",
+                                "oPrice":"¥229"
                             }
                         ]
                     },
                     {
-                        "actTitle":"assets/img/index/06259440150287217.jpg",
+                        "actTitle":"assets/img/index/06259439166330381.jpg",
                         "swiperCon":[
                             {
-                                "img":"assets/img/index/1_main_9_360.jpg",
-                                "title":"LetsDiet经典魔术裤小黑裤修身瘦腿小脚3D提臀设计",
-                                "price":"￥148",
-                                "oPrice":"￥199"
+                                "img":"assets/img/index/1_main_289055_360.jpg",
+                                "title":"nuline洗牙器 赠电动牙刷*2只 漱口水*1瓶",
+                                "price":"￥599",
+                                "oPrice":"￥699"
                             },
                             {
-                                "img":"assets/img/index/1_main_9_360.jpg",
-                                "title":"LetsDiet经典魔术裤小黑裤修身瘦腿小脚3D提臀设计",
-                                "price":"￥148",
-                                "oPrice":"￥199"
+                                "img":"assets/img/index/1_main_279015_360.jpg",
+                                "title":"韩国艾医生补水柔缓壳聚糖小绷带急救面膜易敏可用2ml*14条",
+                                "price":"￥79",
+                                "oPrice":"￥158"
                             },
                             {
-                                "img":"assets/img/index/1_main_9_360.jpg",
-                                "title":"LetsDiet经典魔术裤小黑裤修身瘦腿小脚3D提臀设计",
-                                "price":"￥148",
-                                "oPrice":"￥199"
+                                "img":"assets/img/index/1_main_296843_360.jpg",
+                                "title":"Zirkulin哲库林 钩果草肩颈霜125ml",
+                                "price":"￥88",
+                                "oPrice":"￥106"
                             },
                             {
-                                "img":"assets/img/index/1_main_9_360.jpg",
-                                "title":"LetsDiet经典魔术裤小黑裤修身瘦腿小脚3D提臀设计",
-                                "price":"￥148",
-                                "oPrice":"￥199"
+                                "img":"assets/img/index/1_main_286750_360.jpg",
+                                "title":"(跨境)韩国Dr.melaheal槿妆小蓝瓶眼霜60ml",
+                                "price":"￥118",
+                                "oPrice":"￥177"
+                            },
+                            {
+                                "img":"assets/img/index/1_main_247745_360.jpg",
+                                "title":"日本安速梦纳明亮白漱口水液体牙膏1080ml",
+                                "price":"￥118",
+                                "oPrice":"￥198"
+                            },
+                            {
+                                "img":"assets/img/index/1_main_296831_360.jpg",
+                                "title":"（跨境）美国Kiehl's科颜氏 明星套组（牛油果眼霜14g+高保湿面霜50ml）",
+                                "price":"￥478",
+                                "oPrice":"￥669"
+                            },
+                            {
+                                "img":"assets/img/index/1_main_295980_360.jpg",
+                                "title":"(跨境))美国雅诗兰黛特润修护肌透精华露50ml",
+                                "price":"￥598",
+                                "oPrice":"￥699"
+                            }
+                        ]
+                    },
+                    {
+                        "actTitle":"assets/img/index/06258503516985427.jpg",
+                        "swiperCon":[
+                            {
+                                "img":"assets/img/index/1_main_273029a_360.jpg",
+                                "title":"康宁百丽保温杯2个：280ml+480ml",
+                                "price":"￥99",
+                                "oPrice":"￥398"
+                            },
+                            {
+                                "img":"assets/img/index/1_main_287988_360.jpg",
+                                "title":"摩飞多功能薄饼机和面烙饼二合一电饼铛早餐机（摩飞薄饼机+摩飞电水壶）",
+                                "price":"￥398",
+                                "oPrice":"￥598"
+                            },
+                            {
+                                "img":"assets/img/index/1_main_288480_360.jpg",
+                                "title":"双立人智能电饭煲2L",
+                                "price":"￥599",
+                                "oPrice":"￥799"
+                            },
+                            {
+                                "img":"assets/img/index/1_main_283838_360.jpg",
+                                "title":"菲仕乐精致刀具4件套组（18厘米中式菜刀+17厘米日式多用刀+9厘米去皮刀+原木色插入式刀架）",
+                                "price":"￥299",
+                                "oPrice":"￥599"
+                            },
+                            {
+                                "img":"assets/img/index/1_main_236843_360.jpg",
+                                "title":"韩乐氏乌檀木砧板（圆砧板+方砧板+擀面杖+木筷子10双）",
+                                "price":"￥299",
+                                "oPrice":"￥498"
+                            },
+                            {
+                                "img":"assets/img/index/1_main_236872_360.jpg",
+                                "title":"WUJO-五江北欧风珐琅搪瓷双耳汤锅-21cm-WJ-X110A",
+                                "price":"￥89",
+                                "oPrice":"￥146"
+                            },
+                            {
+                                "img":"assets/img/index/1_main_239579_360.jpg",
+                                "title":"双立人智能电饭煲2L",
+                                "price":"￥599",
+                                "oPrice":"￥799"
+                            }
+                        ]
+                    },
+                    {
+                        "actTitle":"assets/img/index/06259437058997684.jpg",
+                        "swiperCon":[
+                            {
+                                "img":"assets/img/index/1_main_285548_360.jpg",
+                                "title":"ileven十全食美每日坚果 20g*14包*10盒",
+                                "price":"￥299",
+                            },
+                            {
+                                "img":"assets/img/index/1_main_288966_360.jpg",
+                                "title":"阿根廷进口野生大西洋金尾黄鱼 500g*7袋-顺丰直发",
+                                "price":"￥298",
+                                "oPrice":"￥398"
+                            },
+                            {
+                                "img":"assets/img/index/1_main_275314_360.jpg",
+                                "title":"康乐满院即食花胶羹礼盒138g*4碗  五红/银耳 两周口味 固化物≥90%",
+                                "price":"￥238",
+                                "oPrice":"￥329"
+                            },
+                            {
+                                "img":"assets/img/index/1_main_241242_360.jpg",
+                                "title":"立健一级冷榨黄金亚麻籽油 1L*7瓶 赠500ml",
+                                "price":"￥298",
+                                "oPrice":"￥398"
+                            },
+                            {
+                                "img":"assets/img/index/1_main_213362z_360.jpg",
+                                "title":"苗老表凤凰匠心手作跑山猪腊肉 4.5斤装",
+                                "price":"￥498",
+                                "oPrice":"￥598"
+                            },
+                            {
+                                "img":"assets/img/index/1_main_235069z_360.jpg",
+                                "title":"洋河晶之藏52度浓香型白酒 500ml*12瓶",
+                                "price":"￥478",
+                                "oPrice":"￥669"
+                            },
+                            {
+                                "img":"assets/img/index/1_main_235159aa_360.jpg",
+                                "title":"奥菲宝嘉隆AOP干红葡萄酒 750ml*12瓶",
+                                "price":"￥598",
+                                "oPrice":"￥699"
                             }
                         ]
                     }
-
+                ]
+            },
+            "youxuan":{
+                "title":"assets/img/index/index_t_2.png",
+                "content":[
+                    {
+                        "img":"assets/img/index/1_main_293273_1280.jpg",
+                        "title":"福生阿拉斯加原味鳕鱼丸  500g*10袋",
+                        "price":"¥279",
+                        "oPrice":"¥399"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_288957_1280.jpg",
+                        "title":"陕西长安火晶柿子（礼盒装）30枚 约4斤",
+                        "price":"¥45",
+                        "oPrice":"¥59"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_288963_360.jpg",
+                        "title":"阿品老北京羊蝎子火锅 1kg（常温）",
+                        "price":"¥89",
+                        "oPrice":"¥109"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_aaa_360.jpg",
+                        "title":"LetsDiet经典魔术裤小黑裤修身瘦腿小脚3D提臀设计",
+                        "price":"¥148",
+                        "oPrice":"¥199"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_289059_360.jpg",
+                        "title":"骨郎中颈肩腰腿关节综合贴（共82贴）",
+                        "price":"¥159",
+                        "oPrice":"¥179"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_288968_360.jpg",
+                        "title":"秋冬滋补*中国香港张珍记佛跳墙 4-6人份 1.5kg",
+                        "price":"¥598",
+                        "oPrice":"¥699"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_241577_360.jpg",
+                        "title":"湖北荆州手工鱼糕300g*3袋 手工鱼丸280g*3袋",
+                        "price":"¥108",
+                        "oPrice":"¥138"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_239920_360.jpg",
+                        "title":"清朴堂彩金祥云筷·五双装红檀木圆彩金祥云5双装",
+                        "price":"¥99",
+                        "oPrice":"¥199"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_239919_360.jpg",
+                        "title":"德克DIRK珐琅日式耐热蒸笼陶瓷砂锅DK-1009 （2L）",
+                        "price":"¥399",
+                        "oPrice":"¥499"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_239917_360.jpg",
+                        "title":"翊轩堂“喜上眉梢”铁壶（喜上眉梢铁壶+手把壶+铸铁杯4个+壶垫+壶叉+电陶炉）",
+                        "price":"¥799",
+                        "oPrice":"¥999"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_236448_360.jpg",
+                        "title":"御品膏方-参杞乌鸡草本膏 200g*5瓶 赠勺子一把",
+                        "price":"¥999",
+                        "oPrice":"¥1399"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_236417_360.jpg",
+                        "title":"绿森尚品桑葚干 120g*15瓶",
+                        "price":"¥298",
+                        "oPrice":"¥398"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_232228b_360.jpg",
+                        "title":"立兴FD冻干玉米粉 160g*10盒",
+                        "price":"¥299",
+                        "oPrice":"¥399"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_293273_1280.jpg",
+                        "title":"福生阿拉斯加原味鳕鱼丸  500g*10袋",
+                        "price":"¥279",
+                        "oPrice":"¥399"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_288957_1280.jpg",
+                        "title":"陕西长安火晶柿子（礼盒装）30枚 约4斤",
+                        "price":"¥45",
+                        "oPrice":"¥59"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_288963_360.jpg",
+                        "title":"阿品老北京羊蝎子火锅 1kg（常温）",
+                        "price":"¥89",
+                        "oPrice":"¥109"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_aaa_360.jpg",
+                        "title":"LetsDiet经典魔术裤小黑裤修身瘦腿小脚3D提臀设计",
+                        "price":"¥148",
+                        "oPrice":"¥199"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_289059_360.jpg",
+                        "title":"骨郎中颈肩腰腿关节综合贴（共82贴）",
+                        "price":"¥159",
+                        "oPrice":"¥179"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_288968_360.jpg",
+                        "title":"秋冬滋补*中国香港张珍记佛跳墙 4-6人份 1.5kg",
+                        "price":"¥598",
+                        "oPrice":"¥699"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_241577_360.jpg",
+                        "title":"湖北荆州手工鱼糕300g*3袋 手工鱼丸280g*3袋",
+                        "price":"¥108",
+                        "oPrice":"¥138"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_239920_360.jpg",
+                        "title":"清朴堂彩金祥云筷·五双装红檀木圆彩金祥云5双装",
+                        "price":"¥99",
+                        "oPrice":"¥199"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_239919_360.jpg",
+                        "title":"德克DIRK珐琅日式耐热蒸笼陶瓷砂锅DK-1009 （2L）",
+                        "price":"¥399",
+                        "oPrice":"¥499"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_239917_360.jpg",
+                        "title":"翊轩堂“喜上眉梢”铁壶（喜上眉梢铁壶+手把壶+铸铁杯4个+壶垫+壶叉+电陶炉）",
+                        "price":"¥799",
+                        "oPrice":"¥999"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_236448_360.jpg",
+                        "title":"御品膏方-参杞乌鸡草本膏 200g*5瓶 赠勺子一把",
+                        "price":"¥999",
+                        "oPrice":"¥1399"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_236417_360.jpg",
+                        "title":"绿森尚品桑葚干 120g*15瓶",
+                        "price":"¥298",
+                        "oPrice":"¥398"
+                    },
+                    {
+                        "img":"assets/img/index/1_main_232228b_360.jpg",
+                        "title":"立兴FD冻干玉米粉 160g*10盒",
+                        "price":"¥299",
+                        "oPrice":"¥399"
+                    }
                 ]
             }
         }

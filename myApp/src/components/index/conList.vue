@@ -1,7 +1,7 @@
 <template>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" :key="index" v-for="(pro,index) in data">
+    <div class="swiper-container swiper2">
+        <div class="swiper-wrapper contentList">
+            <div class="swiper-slide content" :key="index" v-for="(pro,index) in data">
                 <img :src="pro.img" class="product-pic"/>
                 <p class="product-title">{{pro.title}}</p>
                 <p class="product-price">
@@ -9,7 +9,7 @@
                     <span>{{pro.oPrice}}</span>
                 </p>
             </div>
-            <div  class="swiper-slide selectOther">
+            <div  class="swiper-slide content selectOther">
                 <span class="selectALL">查看更多</span>
                 <P class="seeAll">See All</P>
             </div>
@@ -25,7 +25,7 @@
         methods:{
             _initSwiper(){
                 /*eslint-disable no-new*/
-                const newSwiper = new Swiper('.swiper-container',{
+                const newSwiper = new Swiper('.swiper2',{
                     slidesPerView: 'auto',
                     spaceBetween: 10,
                     observer:true,//修改swiper自己或子元素时，自动初始化swiper
@@ -40,10 +40,12 @@
 </script>
 
 <style>
-    .swiper-wrapper{
+    .contentList{
         padding:0.1rem;
+        background-color: white;
+        margin-bottom: 0.1rem;
     }
-    .swiper-slide{
+    .content{
         width:40%;
         text-align: center;
     }
@@ -59,13 +61,23 @@
         line-height: 0.12rem;
         color: #969696;
     }
-    .product-pic{
+    .swiper2 .product-pic{
         width:100%;
     }
-    .product-title{
+    .swiper2 .product-title{
         overflow: hidden;
         text-overflow:ellipsis;
         white-space: nowrap;
+        margin:0.04rem 0rem;
+    }
+    .swiper2 .product-price span:nth-child(1){
+        color:#c4193f;
+    }
+    .swiper2 .product-price span:nth-child(2){
+        color: #969696;
+        text-decoration: line-through;
+        margin-left: 5px;
+        font-size: 0.13rem;
     }
 
 </style>

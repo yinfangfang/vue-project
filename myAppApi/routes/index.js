@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const klgIndex  = require("../api/klgIndex");
+const KlgClassify = require("../api/klgClassify")
 
 
 router.all("*",(req,res,next)=>{
@@ -18,6 +19,11 @@ router.get('/', function(req, res, next) {
 
 router.get("/klgIndex", (req, res) => {
   let data = klgIndex.getData();
+  res.json(data);
+})
+
+router.get("/KlgClassify", (req, res) => {
+  let data = KlgClassify.getData();
   res.json(data);
 })
 

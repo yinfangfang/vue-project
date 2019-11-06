@@ -1,9 +1,7 @@
 <template>
     <div>
         <img :src='data.actTitle' class="today-act-con"/>
-        <ul class="act-content">
-            <con-list :data='data.swiperCon'></con-list>
-        </ul>
+        <con-list :data='data.swiperCon'></con-list>
     </div>
 </template>
 
@@ -22,10 +20,5 @@
     .today-act-con{
         width:3.75rem;
         height:1.72rem;
-    }
-    .act-content{
-        display:flex;
-        overflow: auto;
-        white-space: nowrap;
     }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="today-act-bg">
-            <img :src='data.title' class="today-act-title"/>
+            <img :src="data.title" class="today-act-title"/>
         </div>
         <today-act-con :key="index" v-for="(con,index) in data.list" :data="con" ></today-act-con>
     </div>

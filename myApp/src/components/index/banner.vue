@@ -1,7 +1,7 @@
 <template>
-    <div class="swiper-container">
+    <div class="swiper-container swiper1">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" :key="index" v-for="(b,index) in data">
+            <div class="swiper-slide ibanner" :key="index" v-for="(b,index) in data">
                 <img :src='data[index].src' class="img"/>
             </div>
         </div>
@@ -17,7 +17,7 @@
         methods:{
             _initSwiper(){
                 /*eslint-disable no-new*/
-                const newSwiper = new Swiper('.swiper-container',{
+                const newSwiper = new Swiper('.swiper1',{
                     loop:true,
                     autoplay:true,
                     pagination:{
@@ -37,7 +37,7 @@
 
 <style>
     @import "../../../node_modules/swiper/css/swiper.css";
-    .swiper-slide .img{
+    .ibanner .img{
         width:3.75rem;
         height:2rem;
     }

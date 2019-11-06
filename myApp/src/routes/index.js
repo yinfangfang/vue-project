@@ -23,7 +23,6 @@ let router = new VueRouter({
                 {path:"cart",component:cart},
                 {path:"personal",component:personal}
             ]
-
         },
     ]
 })
