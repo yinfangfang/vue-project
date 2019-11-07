@@ -1,6 +1,6 @@
 <template>
-    <header class="cheader">
-        <div class="c_search">
+    <header class="cheader" @click="toSearch">
+        <div class="c_search" >
             <img src="../../../public/assets/img/s_ico1.png"/>
             <span>搜索商品,品牌</span>
         </div>
@@ -9,7 +9,12 @@
 
 <script>
     export default {
-        name: "cheader"
+        name: "cheader",
+        methods:{
+            toSearch(){
+                this.$bus.$emit("toSearch")
+            }
+        }
     }
 </script>
 
@@ -23,6 +28,7 @@
         padding:0.1rem 0rem;
         box-sizing: border-box;
         background-color: white;
+        z-index:10;
     }
     .c_search{
         width:3.45rem;

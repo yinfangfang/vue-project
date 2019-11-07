@@ -1,6 +1,6 @@
 <template>
     <div class="right-list-con">
-        <h3 class="title">{{data.classify}}</h3>
+        <h3 class="title"><span></span>&nbsp;{{data.classify}}&nbsp;<span></span></h3>
         <ul class="product-list">
             <li class="product" :key="pid" v-for="(pro,pid) in data.conList">
                 <img :src="pro.img"/>
@@ -24,10 +24,17 @@
         box-sizing: border-box;
         text-align: center;
     }
+    .right-list-con .title span{
+        position: relative;
+        top: -0.3em;
+        display: inline-block;
+        height: 0.01rem;
+        width: 0.2rem;
+        background-color: #d3d3d3;
+    }
     .product-list{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
     .product-list .product{
         width:33%;

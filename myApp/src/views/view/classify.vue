@@ -1,12 +1,16 @@
 <template>
     <div>
-        <klg-cheader></klg-cheader>
-        <section class="main">
-            <klg-leftnav :data="classifyInfo.list"></klg-leftnav>
-            <klg-rightlist :data="classifyInfo.list[id]"></klg-rightlist>
-        </section>
-        <klg-footer></klg-footer>
+        <div class="classify" v-if="flag">
+            <klg-cheader></klg-cheader>
+            <section class="main">
+                <klg-leftnav :data="classifyInfo.list"></klg-leftnav>
+                <klg-rightlist :data="classifyInfo.list[id]"></klg-rightlist>
+            </section>
+            <klg-footer></klg-footer>
+        </div>
+        <klg-search v-else></klg-search>
     </div>
+
 </template>
 
 <script>
@@ -14,19 +18,22 @@
     import header from "../../components/classify/header"
     import footer from "../../components/footer/footer"
     import leftNav from "../../components/classify/leftNav"
-    import rightList from "../../components/classify/rightList";
+    import rightList from "../../components/classify/rightList"
+    import search from "./search"
     export default {
         name: "classify",
         components:{
             "klg-footer":footer,
             "klg-cheader":header,
             "klg-leftnav":leftNav,
-            "klg-rightlist":rightList
+            "klg-rightlist":rightList,
+            "klg-search":search
         },
         data(){
             return {
                 classifyInfo : [],
-                id:0
+                id:0,
+                flag:true
             }
         },
         methods: {
@@ -35,10 +42,7 @@
                     this.classifyInfo = data;
                     console.log(data)
                 })
-            },
-            // dataNum(id){
-            //     this.id = id
-            // }
+            }
         },
         created() {
             this._initIndexInfo();
@@ -46,6 +50,12 @@
         mounted() {
             this.$bus.$on("change",(id)=>{
                 this.id = id
+            })
+            this.$bus.$on("toSearch",()=>{
+                this.flag = false
+            })
+            this.$bus.$on("toback",()=>{
+                this.flag = true
             })
         }
     }

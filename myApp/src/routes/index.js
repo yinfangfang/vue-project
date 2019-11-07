@@ -6,6 +6,7 @@ import index from "../views/view/index"
 import classify from "../views/view/classify"
 import cart from "../views/view/cart"
 import personal from "../views/view/personal"
+import list from "../views/view/list";
 
 
 Vue.use(VueRouter)
@@ -24,6 +25,9 @@ let router = new VueRouter({
                 {path:"personal",component:personal}
             ]
         },
+        {
+            path:"/list",component:list
+        }
     ]
 })
 

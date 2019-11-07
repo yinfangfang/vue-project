@@ -1,6 +1,6 @@
 @charset "utf-8";
 html,body,div,p,form,label,ul,li,dl,dt,dd,ol,img,button,b,em,strong,small,h1,h2,h3,h4,h5,h6{margin:0;padding:0;border:0;list-style:none;font-style:normal;}
-body{font-family:"PingFangSC-Light","微软雅黑",Helvetica;font-size:0.14rem;color:#333;background:rgb(238,238,238);}
+body{font-family:"PingFangSC-Light","微软雅黑",Helvetica;font-size:0.14rem;color:#333;background:white;}
 a, a.link{color:#666;text-decoration:none;font-weight:500;}
 a, a.link:hover{color:#666;}
 h1,h2,h3,h4,h5,h6{font-weight: normal;}

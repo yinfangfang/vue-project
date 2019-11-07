@@ -1,5 +1,5 @@
 <template>
-    <header class="iheader">
+    <header class="iheader" @click="toSearch">
         <div class="i_search">
             <img src="../../../public/assets/img/s_ico1.png"/>
             <span>请输入您要搜索的内容</span>
@@ -14,7 +14,12 @@
 
 <script>
     export default {
-        name: "iheader"
+        name: "iheader",
+        methods:{
+            toSearch(){
+                this.$bus.$emit("toSearch")
+            }
+        }
     }
 </script>
 

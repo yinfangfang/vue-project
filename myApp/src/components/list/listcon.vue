@@ -1,19 +1,19 @@
 <template>
     <ul class="today-you-con">
-    <li class="today-you-product" :key="ind" v-for="(p,ind) in data">
-        <img v-lazy="p.img" class="product-pic"/>
-        <div class="product-title">{{p.title}}</div>
-        <p class="product-price">
-            <span>{{p.price}}</span>
-            <span>{{p.oPrice}}</span>
-        </p>
-    </li>
-</ul>
+        <li class="today-you-product" :key="ind" v-for="(p,ind) in data.content">
+            <img v-lazy="p.img" class="product-pic"/>
+            <div class="product-title">{{p.title}}</div>
+            <p class="product-price">
+                <span>{{p.price}}</span>
+                <span>{{p.oPrice}}</span>
+            </p>
+        </li>
+    </ul>
 </template>
 
 <script>
     export default {
-        name: "todayYXCon",
+        name: "listcon",
         props:["data"]
     }
 </script>
@@ -23,6 +23,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-top: 0.85rem;
+        padding-top: 0.05rem;
     }
     .today-you-product{
         width: 49%;

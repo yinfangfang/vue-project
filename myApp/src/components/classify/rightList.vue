@@ -22,5 +22,6 @@
         box-sizing: border-box;
         overflow: auto;
         margin-left: 25%;
+        margin-bottom:0.5rem;
     }
 </style>
