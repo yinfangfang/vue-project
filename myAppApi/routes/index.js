@@ -4,6 +4,7 @@ const klgIndex  = require("../api/klgIndex");
 const KlgClassify = require("../api/klgClassify")
 const klgSearch = require("../api/klgSearch")
 const klgList = require("../api/klgList")
+const klgProduct = require("../api/klgProduct")
 
 router.all("*",(req,res,next)=>{
   res.header("Access-Control-Allow-Origin", "*");
@@ -35,6 +36,11 @@ router.get("/KlgSearch", (req, res) => {
 
 router.get("/klgList", (req, res) => {
   let data = klgList.getData();
+  res.json(data);
+})
+
+router.get("/klgProduct", (req, res) => {
+  let data = klgProduct.getData();
   res.json(data);
 })
 

@@ -23,8 +23,8 @@
                     pagination:{
                         el:".swiper-pagination",
                     },
-                    observer:true,//修改swiper自己或子元素时，自动初始化swiper
-                    observeParents:true//修改swiper的父元素时，自动初始化swiper
+                     observer:true,//修改swiper自己或子元素时，自动初始化swiper
+                     observeParents:true//修改swiper的父元素时，自动初始化swiper
                 })
             }
         },
@@ -41,7 +41,7 @@
         width:3.75rem;
         height:2rem;
     }
-    .swiper-pagination-bullet-active{
+    .swiper1 .swiper-pagination-bullet-active{
         background-color: white;
     }
 </style>

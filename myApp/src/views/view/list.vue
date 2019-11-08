@@ -2,7 +2,7 @@
     <div class="list">
         <header class="lheder">
             <div class="toptitle">
-                <span id="showClass">牛奶/酸奶<img class="h-ico" src="../../../public/assets/img/list/h_ico.png"/></span>
+                <span id="showClass" @click="block">{{listInfo.content[id].title}}<img class="h-ico" src="../../../public/assets/img/list/h_ico.png"/></span>
             </div>
             <section class="sortbar">
                 <div class="sortMain">
@@ -13,34 +13,49 @@
                 </div>
                 <div class="instock">筛选<img src="../../../public/assets/img/list/sy.png" /></div>
             </section>
+           <klg-pop-box :data="listInfo" :flag="flag"></klg-pop-box>
         </header>
-        <klg-list-con v-if="listInfo" :data="listInfo"></klg-list-con>
+        <klg-list-con v-if="listInfo" :data="listInfo.content[id]" ></klg-list-con>
+
     </div>
 </template>
 
 <script>
     import list from "../../components/list/listcon"
-    import listApi from "../../apis/listApi";
+    import listApi from "../../apis/listApi"
+    import popbox from "../../components/list/popbox"
     export default {
         name: "list",
         data(){
             return{
-                listInfo:[]
+                listInfo:[],
+                flag:false,
+                id:0
             }
         },
         components:{
-            "klg-list-con":list
+            "klg-list-con":list,
+            "klg-pop-box":popbox
         },
         methods: {
-            _initlISTInfo() {
+            _initListInfo() {
                 listApi.getData(data => {
                     this.listInfo = data;
                     console.log(data)
                 })
             },
+            block(){
+                this.flag = !this.flag
+            }
         },
         created() {
-            this._initlISTInfo();
+            this._initListInfo();
+        },
+        mounted() {
+            this.$bus.$on("changecon",(index)=>{
+                this.flag = false;
+                this.id = index
+            })
         }
     }
 </script>
@@ -95,5 +110,13 @@
         height:0.12rem;
         vertical-align: middle;
         margin-left: 0.02rem;
+    }
+    .pop-box{
+        width:100%;
+        height: 100%;
+        position: fixed;
+        top: 0.45rem;
+        background-color: rgba(0,0,0,0.4);
+        z-index:10;
     }
 </style>
