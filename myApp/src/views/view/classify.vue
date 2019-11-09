@@ -3,8 +3,8 @@
         <div class="classify" v-if="flag">
             <klg-cheader></klg-cheader>
             <section class="main">
-                <klg-leftnav :data="classifyInfo.list"></klg-leftnav>
-                <klg-rightlist :data="classifyInfo.list[id]"></klg-rightlist>
+                <klg-leftnav v-if="classifyInfo.list" :data="classifyInfo.list"></klg-leftnav>
+                <klg-rightlist v-if="classifyInfo.list" :data="classifyInfo.list[id]"></klg-rightlist>
             </section>
             <klg-footer></klg-footer>
         </div>

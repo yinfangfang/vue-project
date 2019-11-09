@@ -2,7 +2,7 @@
     <div class="right-list-con">
         <h3 class="title"><span></span>&nbsp;{{data.classify}}&nbsp;<span></span></h3>
         <ul class="product-list">
-            <li class="product" :key="pid" v-for="(pro,pid) in data.conList">
+            <li class="product" :key="pid" v-for="(pro,pid) in data.conList" @click="tolist">
                 <img :src="pro.img"/>
                 <p>{{pro.name}}</p>
             </li>
@@ -13,7 +13,12 @@
 <script>
     export default {
         name: "listCon",
-        props:["data"]
+        props:["data"],
+        methods:{
+            tolist(){
+                this.$router.replace("/main/list")
+            }
+        }
     }
 </script>
 

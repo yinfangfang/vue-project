@@ -12,6 +12,9 @@ export default {
 }
 </script>
 
-<style>
+<style >
   @import 'assets/css/basic.css';
+  #app{
+    overflow-x: hidden;
+  }
 </style>

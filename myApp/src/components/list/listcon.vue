@@ -1,6 +1,6 @@
 <template>
     <ul class="list-con">
-        <li class="list-product" :key="ind" v-for="(p,ind) in data.popcon">
+        <li class="list-product" :key="ind" v-for="(p,ind) in data.popcon" @click="toproduct">
             <img v-lazy="p.img" class="product-pic"/>
             <div class="product-title">{{p.title}}</div>
             <p class="product-price">
@@ -14,7 +14,12 @@
 <script>
     export default {
         name: "listcon",
-        props:["data"]
+        props:["data"],
+        methods:{
+            toproduct(){
+                this.$router.replace("/main/product")
+            }
+        }
     }
 </script>
 

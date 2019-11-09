@@ -46,6 +46,9 @@
         color: #979797;
         margin-bottom: 0.05rem;
     }
+    .picture{
+        margin-top:0.1rem;
+    }
     .picture img{
         width:30%;
         height:auto;

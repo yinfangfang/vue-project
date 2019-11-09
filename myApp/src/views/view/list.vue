@@ -15,7 +15,7 @@
             </section>
            <klg-pop-box :data="listInfo" :flag="flag"></klg-pop-box>
         </header>
-        <klg-list-con v-if="listInfo" :data="listInfo.content[id]" ></klg-list-con>
+        <klg-list-con v-if="listInfo.content" :data="listInfo.content[id]" ></klg-list-con>
 
     </div>
 </template>

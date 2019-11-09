@@ -42,7 +42,6 @@
             _initIndexInfo() {
                 indexApi.getData(data => {
                     this.indexInfo = data;
-                    console.log(data)
                 })
             },
         },

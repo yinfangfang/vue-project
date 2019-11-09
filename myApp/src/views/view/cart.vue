@@ -1,13 +1,19 @@
 <template>
     <div>
-        <h4>3</h4>
+        <klg-cart-header></klg-cart-header>
+        <klg-cart-footer></klg-cart-footer>
     </div>
-
 </template>
 
 <script>
+    import header from "../../components/cart/header"
+    import footer from "../../components/cart/footer"
     export default {
-        name: "cart"
+        name: "cart",
+        components:{
+            "klg-cart-header":header,
+            "klg-cart-footer":footer,
+        }
     }
 </script>
 

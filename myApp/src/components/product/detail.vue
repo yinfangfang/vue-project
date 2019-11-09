@@ -8,16 +8,16 @@
             </ul>
         </div>
         <ul class="product-detail">
-            <li v-show="index=0">
+            <li v-if="id=='0'">
                 <img :key="index" v-for="(i,index) in data.current" :src="i.picture"/>
             </li>
-            <li v-show="index=1">
+            <li class="paramater" v-else-if="id=='1'">
                 <p class="canshu" :key="index" v-for="(i,index) in data.paramater" >
                     <span class="col-1">{{i.name}}</span>
                     <span class="col-2">{{i.con}}</span>
                 </p>
             </li>
-            <li v-show="index=2">
+            <li v-else>
                 <img :key="index" v-for="(i,index) in data.send" :src="i.picture"/>
             </li>
         </ul>
@@ -31,18 +31,18 @@
         props:["data"],
         data(){
             return {
-                index:0
+                id:0
             }
         },
         methods:{
             changeone(){
-                this.index = 0
+                this.id = 0
             },
             changetwo(){
-                this.index = 1
+                this.id = 1
             },
             changethree(){
-                this.index = 2
+                this.id = 2
             }
         }
     }
@@ -79,5 +79,11 @@
     .col-1{
         display: inline-block;
         width:40%;
+    }
+    [v-cloak]{
+        display:none;
+    }
+    .product-detail .paramater{
+        padding-bottom: 5rem;
     }
 </style>

@@ -40,9 +40,11 @@
 </script>
 
 <style>
+    .swiper2{
+        background-color: white;
+    }
     .contentList{
         padding:0.1rem;
-        background-color: white;
         margin-bottom: 0.1rem;
     }
     .content{
