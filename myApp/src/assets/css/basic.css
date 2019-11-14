@@ -5,4 +5,8 @@ a, a.link{color:#666;text-decoration:none;font-weight:500;}
 a, a.link:hover{color:#666;}
 h1,h2,h3,h4,h5,h6{font-weight: normal;}
 html{font-size:26.67vw;}
+input[type="checkbox"]{-webkit-appearance:none;outline: none;}
+input.check{background:url(../../../public/assets/img/cart/radio.png) no-repeat center left;background-size:0.2rem 0.2rem;width:0.22rem;height:0.22rem;}
+input.check:checked{background:url(../../../public/assets/img/cart/radio_on.png) no-repeat center left;background-size:0.2rem 0.2rem;}
+
 

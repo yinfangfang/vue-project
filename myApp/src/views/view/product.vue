@@ -1,8 +1,8 @@
 <template>
     <section>
-        <klg-product-banner v-if="productInfo.detail" :data="productInfo.detail[0].banner"></klg-product-banner>
-        <klg-product-introduce v-if="productInfo.detail" :data="productInfo.detail[0].information"></klg-product-introduce>
-        <klg-product-ship v-if="productInfo.detail" :data="productInfo.detail[0].discount"></klg-product-ship>
+        <klg-product-banner v-if="productInfo.detail" :data="productInfo.detail[id].banner"></klg-product-banner>
+        <klg-product-introduce v-if="productInfo.detail" :data="productInfo.detail[id].information"></klg-product-introduce>
+        <klg-product-ship v-if="productInfo.detail" :data="productInfo.detail[id].discount"></klg-product-ship>
         <div class="label-box" @click="showPopup">
             <div class="label-left">
                 <div class="way">
@@ -25,13 +25,13 @@
                 默认<img src="../../../public/assets/img/product/arrow_right.png"/>
             </div>
         </div>
-        <klg-product-review v-if="productInfo.detail" :data="productInfo.detail[0].review"></klg-product-review>
+        <klg-product-review v-if="productInfo.detail" :data="productInfo.detail[id].review"></klg-product-review>
         <div class="advert">
-            <img  v-if="productInfo.detail" :src="productInfo.detail[0].advert"/>
+            <img  v-if="productInfo.detail" :src="productInfo.detail[id].advert"/>
         </div>
         <div class="box-title">猜你喜欢</div>
-        <klg-product-conlist v-if="productInfo.detail" :data="productInfo.detail[0].like"></klg-product-conlist>
-        <klg-product-detail v-if="productInfo.detail" :data="productInfo.detail[0].detail"></klg-product-detail>
+        <klg-product-conlist v-if="productInfo.detail" :data="productInfo.detail[id].like"></klg-product-conlist>
+        <klg-product-detail v-if="productInfo.detail" :data="productInfo.detail[id].detail"></klg-product-detail>
         <klg-product-footer></klg-product-footer>
         <van-popup class="popup-box" v-model="show"  closeable position="bottom" :style="{ height: '20%' }">
             <h1>快乐购保证</h1>
@@ -78,7 +78,8 @@
         data(){
             return {
                 productInfo : [],
-                show: false
+                show: false,
+                id:0
             }
         },
         components:{
@@ -103,6 +104,11 @@
         },
         created() {
             this._initProductInfo();
+            console.log(this.$route.query.id)
+            //?id=xx传参
+            this.id = this.$route.query.id
+            //:id=xx传参
+            // this.item = this.list[this.$route.params.id]
         }
     }
 </script>

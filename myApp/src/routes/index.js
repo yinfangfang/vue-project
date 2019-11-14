@@ -25,7 +25,8 @@ let router = new VueRouter({
                 {path:"cart",component:cart},
                 {path:"personal",component:personal},
                 {path:"list",component:list},
-                {path:"product",component:product}
+                {path:"product",component:product},
+                {name:"d", path:"/main/product/:id",component:product}
             ]
         },
 

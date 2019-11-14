@@ -1,61 +1,59 @@
 <template>
-    <div class="payment-bar">
-        <div class="all-checkbox">
-            <input type="checkbox" class="check goods-check"/>
-            全选
+    <div class="account">
+        <div class="cart-check">
+            <input type="checkbox" class="check cartCheck" v-model="data.checked" @change="selectAll">
+            <span>全选</span>
         </div>
-        <div class="shop-total">
-            <strong>
-                合计：￥<i id="AllTotal" class="total"></i>
-            </strong>
-            <span>不含运费/税费</span>
+        <div class="topAccount">
+            <span>合计：￥<span>{{data.totalMoney}}</span></span>
+            <button>结算</button>
         </div>
-        <div href="#" class="settlement">结算</div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "cfooter",
+        name: "kfooter",
+        props:["data"],
+        methods:{
+            selectAll(){
+                this.$emit("cAll")
+            }
+        }
     }
 </script>
 
 <style scoped>
-    .payment-bar{
-        overflow:hidden;
-        width:100%;
-        height:49px;
-        position:fixed;
-        bottom:0;
-        border-top:1px solid #e0e0e0;
-        background:#fff;
+    .account{
+        position: fixed;
+        bottom: 0rem;
         display: flex;
+        justify-content: space-between;
+        background: #fff;
+        height: 0.5rem;
+        border-top: 0.005rem solid #ccc;
+        width: 100%;
+        line-height: 0.5rem;
+        padding: 0 0.1rem;
+        font-size: 0.14rem;
     }
-    .payment-bar .all-checkbox{
-        width:10%;
-        float:left;
-        line-height:0.5rem;
-        padding-left:0.01rem;
+    .cart-check{
+        display: flex;
+        align-items: center;
     }
-    .payment-bar .shop-total{
-        text-align: right;
-        width:60%;
+    .topAccount span span{
+        color: orangered;
     }
-    .payment-bar .shop-total strong{
-        display:block;
-        font-size:16px;
+    .topAccount button{
+        width: 1rem;
+        height: 0.5rem;
+        color: #fff;
+        background: red;
+        margin-left: 0.05rem;
+        font-size: 0.16rem;
+        letter-spacing: 0.02rem;
     }
-    .payment-bar .shop-total span{
-        display:block;
-        font-size:12px;
-    }
-    .payment-bar .settlement{
-        width:30%;
-        height:0.5rem;
-        line-height:0.5rem;
-        text-align:center;
-        color:#fff;
-        font-size:0.16rem;
-        background:#f23030;
+    .cartCheck{
+        margin-right: 0.05rem;
     }
 </style>

@@ -1,13 +1,14 @@
 <template>
     <div class="kheader">
-        <div class="cart-title">购物车(<span>0</span>)</div>
+        <div class="cart-title">购物车(<span>{{data.totalNum}}</span>)</div>
         <div class="cart-edit">编辑</div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "kheader"
+        name: "kheader",
+        props:["data"]
     }
 </script>
 
@@ -21,6 +22,7 @@
         position: fixed;
         top:0;
         z-index: 10;
+        background-color: white;
     }
     .cart-title{
         width:100%;

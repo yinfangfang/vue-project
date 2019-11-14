@@ -1,12 +1,14 @@
 <template>
     <ul class="list-con">
-        <li class="list-product" :key="ind" v-for="(p,ind) in data.popcon" @click="toproduct">
-            <img v-lazy="p.img" class="product-pic"/>
-            <div class="product-title">{{p.title}}</div>
-            <p class="product-price">
-                <span>{{p.price}}</span>
-                <span>{{p.oPrice}}</span>
-            </p>
+        <li class="list-product" :key="ind" v-for="(p,ind) in data.popcon">
+            <a :href="'#/main/product?id='+ind">
+                <img v-lazy="p.img" class="product-pic"/>
+                <div class="product-title">{{p.title}}</div>
+                <p class="product-price">
+                    <span>{{p.price}}</span>
+                    <span>{{p.oPrice}}</span>
+                </p>
+            </a>
         </li>
     </ul>
 </template>
@@ -16,9 +18,9 @@
         name: "listcon",
         props:["data"],
         methods:{
-            toproduct(){
-                this.$router.replace("/main/product")
-            }
+            // toproduct(){
+            //     this.$router.replace("/main/product")
+            // }
         }
     }
 </script>

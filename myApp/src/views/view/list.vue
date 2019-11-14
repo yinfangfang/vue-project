@@ -2,7 +2,7 @@
     <div class="list">
         <header class="lheder">
             <div class="toptitle">
-                <span id="showClass" @click="block">{{listInfo.content[id].title}}<img class="h-ico" src="../../../public/assets/img/list/h_ico.png"/></span>
+                <span id="showClass" @click="block" v-if="listInfo.content">{{listInfo.content[id].title}}<img class="h-ico" src="../../../public/assets/img/list/h_ico.png"/></span>
             </div>
             <section class="sortbar">
                 <div class="sortMain">
@@ -13,7 +13,7 @@
                 </div>
                 <div class="instock">筛选<img src="../../../public/assets/img/list/sy.png" /></div>
             </section>
-           <klg-pop-box :data="listInfo" :flag="flag"></klg-pop-box>
+           <klg-pop-box v-if="listInfo" :data="listInfo" :flag="flag"></klg-pop-box>
         </header>
         <klg-list-con v-if="listInfo.content" :data="listInfo.content[id]" ></klg-list-con>
 

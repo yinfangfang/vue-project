@@ -27,9 +27,8 @@
         width:25%;
         position: fixed;
         top: 50px;
-        bottom: 0;
         left: 0;
-        overflow: hidden;
+        overflow: auto;
         padding-bottom: 50px;
         text-align: center;
         border-right: 0.005rem solid rgb(245,245,245);
@@ -38,7 +37,7 @@
     .left-nav li{
         height:0.5rem;
         line-height: 0.5rem;
-        margin-bottom: 0.1rem;
+        /*margin-bottom: 0.1rem;*/
         color: #949494;
         font-size: 0.15rem;
         position: relative;
